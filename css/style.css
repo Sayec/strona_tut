@@ -1,0 +1,817 @@
+/*
+
+    font-family: 'Saira', sans-serif;
+
+    font-family: 'Saira Condensed', sans-serif;
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header {
+    height: 100vh;
+    background-color: #29a6dc;
+    position: relative;
+    overflow: hidden;
+}
+
+header > * {
+    position: absolute;
+}
+
+header .welcome {
+    z-index: 1;
+    top: 7%;
+    left: 5%;
+    right: 5%;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header img {
+    bottom: 0px;
+    right: 0px;
+    height: 50%;
+}
+
+header p {}
+
+header h1 {
+    margin-top: 15px;
+    font-size: 20px;
+
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header button {
+    font-family: 'Saira', sans-serif;
+    background-color: transparent;
+    border: 2px solid white;
+    font-weight: light;
+    padding: 0 20px;
+    line-height: 32px;
+    top: 100%;
+    left: 0px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+}
+
+@media (orientation:portrait) and (min-width:360px) {
+    header h1 {
+
+        font-size: 24px;
+
+    }
+
+    header img {
+        right: -20%;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+}
+
+@media (orientation:portrait) and (min-width:768px) {
+    header p {
+        font-size: 60px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 32px;
+    }
+
+    header button {
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+}
+
+@media (orientation:landscape) {
+    header img {
+        bottom: 0px;
+        right: -5%;
+        height: 80%;
+    }
+
+    header .welcome {
+        top: 15%;
+        left: 10%;
+        right: 45%;
+    }
+
+    header button {
+        margin-top: 40px;
+    }
+}
+
+@media (orientation:landscape) and (min-width:640px) {
+    header h1 {
+        margin-top: 15px;
+        font-size: 24px;
+
+    }
+
+    header h2 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    header button {
+        font-size: 16px;
+    }
+}
+
+
+@media (orientation:landscape) and (min-width:1024px) {
+    header p {
+        font-size: 60px;
+    }
+
+    header .welcome {
+        top: 15%;
+        left: 8%;
+        right: 50%;
+    }
+
+    header h1 {
+        margin-top: 30px;
+        font-size: 30px;
+
+    }
+
+    header h2 {
+        font-size: 26px;
+    }
+
+    header img {
+        height: 80%;
+    }
+
+    header button {
+        margin-top: 60px;
+        line-height: 60px;
+        font-size: 30px;
+    }
+}
+
+@media (orientation:landscape) and (min-width:1280px) {
+    header .welcome {
+        text-align: left;
+        right: 50%;
+    }
+
+    header p {
+        font-size: 90px;
+    }
+
+    header h1 {
+        margin-top: 30px;
+        font-size: 60px;
+
+    }
+
+    header h2 {
+        font-size: 60px;
+
+    }
+
+    header button {
+        padding: 10px 60px;
+        margin-top: 60px;
+        line-height: 60px;
+        font-size: 24px;
+        border-width: 4px;
+    }
+}
+
+@media (orientation:landscape) and (min-width:1600px) {
+    header .welcome {
+        text-align: left;
+    }
+
+    header p {
+        font-size: 100px;
+    }
+
+    header h1 {
+        margin-top: 30px;
+        font-size: 64px;
+
+    }
+
+    header h2 {
+        font-size: 64px;
+
+
+    }
+
+    header button {
+        padding: 10px 80px;
+        margin-top: 60px;
+        line-height: 60px;
+        font-size: 32px;
+        border-width: 4px;
+    }
+}
+
+@media (min-width:1024px) {
+    header button {
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    header button:hover {
+        background-color: white;
+        color: #111;
+    }
+}
+
+
+/*PREZENTACJA*/
+
+.services {
+    padding: 2%;
+    text-align: center;
+    max-width: 1600px;
+    margin: 50px auto 0;
+}
+
+.services > h1 {
+    /*    text-align: center;*/
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+/*
+.services div {
+    margin-top: 30px;
+}
+*/
+
+.services div img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 375px;
+}
+
+.services div h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.services div p {
+    margin-top: 10px;
+    font-family: 'Saira', sans-serif;
+    font-weight: light;
+    text-align: center;
+    font-size: 12px;
+    padding: 5%;
+}
+
+@media (min-width:360px) {
+    .services > h1 {
+        font-size: 28px;
+    }
+
+    .services div h1 {
+        font-size: 24px;
+    }
+
+    .services div p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:768px) {
+    .services > h1 {
+        font-size: 36px;
+    }
+
+    .services div h1 {
+        font-size: 30px;
+    }
+
+    .services div p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .services > h1 {
+        font-size: 36px;
+        margin-bottom: 5%;
+    }
+
+    .services div {
+        float: left;
+        width: 33%;
+    }
+
+    .services div img {
+        /*        display: block;*/
+        max-width: 375px;
+    }
+
+    .services div h1 {
+        font-size: 22px;
+
+    }
+
+    .services div p {
+        /*        display: block;*/
+        margin-top: 10px;
+
+        font-size: 16px;
+        line-height: 110%;
+    }
+}
+
+@media (min-width:1600px) {
+    .services > h1 {
+        font-size: 60px;
+    }
+
+    .services div {
+        padding: 20px;
+    }
+
+    .services div h1 {
+        font-size: 36px;
+
+    }
+
+    .services div p {
+        /*        display: block;*/
+        font-size: 21px;
+
+    }
+}
+
+
+/*PORTOFLIO*/
+
+
+.portfolio {
+    background-color: #1e1e1e;
+    padding-bottom: 1px;
+}
+
+.portfolio .project {
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.portfolio h1 {
+    font-size: 26px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.portfolio .about {
+    color: white;
+    font-family: 'Saira', sans-serif;
+
+
+
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding: 10px 25px;
+}
+
+.portfolio .project .about h2::after {
+    content: '';
+    height: 2px;
+    width: 95%;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    opacity: 70%;
+}
+
+.portfolio .about p {
+    padding: 10px 25px;
+    font-size: 12px;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: #0170ba;
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+
+
+.portfolio .web img {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .portfolio h1 {
+        font-size: 40px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 22px;
+    }
+
+    .portfolio .about p {
+        font-size: 16px;
+    }
+
+
+    /*@media(orientation:landscape) {*/
+
+    .web,
+    .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+    }
+
+    .portfolio .project:nth-of-type(even) .about h2::after {
+        left: auto;
+        right: 0%;
+
+    }
+
+}
+
+@media(orientation:landscape) and (min-width:1400px) {
+    .portfolio h1 {
+        font-size: 60px;
+    }
+
+    .portfolio .about h2 {
+        font-size: 36px;
+    }
+
+    .portfolio .about p {
+        font-size: 21px;
+    }
+}
+
+/* MOTTO*/
+
+.motto {
+    min-height: 30vh;
+    text-align: center;
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+
+
+
+.motto .bg {
+    min-height: 30vh;
+    background-color: rgba(0, 63, 114, 0.5);
+
+}
+
+.motto h1 {
+    padding: 30px 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.motto p {
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+.motto p.autor {
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+}
+
+
+@media (orientation:landscape) {
+    .motto p {
+        width: 50%;
+    }
+
+    .motto p.autor {
+        font-family: 'Saira', sans-serif;
+        font-size: 12px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width:768px) {
+    .motto h1 {
+        font-size: 48px;
+    }
+
+    .motto p {
+        font-size: 26px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .motto p.autor {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1400px) {
+    .motto h1 {
+        font-size: 60px;
+    }
+
+    .motto p {
+        font-size: 36px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .motto p.autor {
+        font-size: 21px;
+    }
+}
+
+
+/*HOBBY*/
+
+.hobby {
+    text-align: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobby h1 {
+    font-size: 26px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    padding: 20px 30px;
+}
+
+.hobby .item {
+    height: 25vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(../images/hobby1.jpg);
+
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(../images/hobby2.jpg);
+
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(../images/hobby3.jpg);
+
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(../images/hobby4.jpg);
+}
+
+
+.hobby .item p {
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;
+    color: white;
+    /*    line-height: 25vh;*/
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: default;
+}
+
+@media (min-width:533px) {
+    .hobby .item {
+        width: 50%;
+        float: left;
+        height: 40vh;
+    }
+
+}
+
+@media (min-width:768px) {
+    .hobby h1 {
+        font-size: 48px;
+    }
+
+    .hobby .item p {
+        font-size: 26px;
+        padding: 10px;
+    }
+}
+
+@media (min-width:1024px) {
+    .hobby .item p {
+        line-height: 40vh;
+        padding: 0;
+        opacity: 0;
+        transition: 1s;
+
+    }
+
+    .hobby .item:hover p {
+        opacity: 1
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobby .item:hover {
+        background-size: 120%;
+    }
+}
+
+@media (min-width:1600px) {
+    .hobby h1 {
+        font-size: 60px;
+    }
+
+    .hobby .item p {
+        font-size: 60px;
+    }
+}
+
+.contact {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Saira Condensed', sans-serif;
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+.contact .wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'saira', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact button {
+    line-height: 40px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    border: 2px solid white;
+}
+
+.contact .socials {
+    padding: 25px;
+    font-size: 0;
+}
+
+.contact .socials .social {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.contact .socials .social img {
+    height: 72px;
+    float: left;
+}
+
+.contact .socials .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+}
+
+@media (min-width:533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+
+
+@media (min-width:1024px) {
+    .contact h1 {
+        font-size: 48px;
+    }
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 20px;
+    }
+
+    .contact .social {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact input {
+        font-size: 24px;
+        height: 48px;
+    }
+
+    .contact textarea {
+        font-size: 24px;
+        height: 180px;
+    }
+
+    .contact button {
+        transition: 0.3s;
+    }
+
+    .contact button:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+footer {
+    background-color: #29a9df;
+}
+
+footer p {
+    line-height: 50px;
+    text-align: center;
+    font-family: 'saira', sans-serif;
+    color: white;
+}
